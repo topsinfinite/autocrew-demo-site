@@ -14,26 +14,13 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- AutoCrew Health Assistant Widget -->
+    <!-- AutoCrew Chat Widget -->
     <script>
       window.AutoCrewConfig = {
-        crewCode: 'DEMO-HC-001',
-        configUrl: 'http://localhost:3000/api/widget/config',
-        primaryColor: '#0d9488',
-        title: 'Health Assistant',
-        subtitle: 'Harmony Family Health',
-        welcomeMessage: 'Hello! I can help you check your health records, medications, and appointments. How can I assist you today?',
-        voiceEnabled: true,
-        firstLaunchAction: 'show-greeting',
-        greetingDelay: 3000,
-        disclaimer: 'This is a demo. Not real medical advice.',
-        suggestedActions: [
-          { label: 'My Medications', message: 'What medications am I currently taking?' },
-          { label: 'Next Appointment', message: 'When is my next appointment?' },
-          { label: 'Lab Results', message: 'Show me my recent lab results' },
-        ],
+        crewCode: 'HARMONY-001-HC-001',
+        configUrl: 'https://autocrew-ai.com/api/widget/config'
       };
     </script>
-    <script src="http://localhost:3000/widget.js" async></script>
+    <script src="https://autocrew-ai.com/widget.js" async></script>
   </body>
 </html>
