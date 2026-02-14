@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harmony Family Health | Comprehensive Family Medicine in Austin, TX</title>
+    <meta name="description" content="Harmony Family Health provides compassionate, comprehensive primary care for every member of your family in Austin, TX. Accepting new patients." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- AutoCrew Health Assistant Widget -->
+    <script>
+      window.AutoCrewConfig = {
+        crewCode: 'DEMO-HC-001',
+        configUrl: 'http://localhost:3000/api/widget/config',
+        primaryColor: '#0d9488',
+        title: 'Health Assistant',
+        subtitle: 'Harmony Family Health',
+        welcomeMessage: 'Hello! I can help you check your health records, medications, and appointments. How can I assist you today?',
+        voiceEnabled: true,
+        firstLaunchAction: 'show-greeting',
+        greetingDelay: 3000,
+        disclaimer: 'This is a demo. Not real medical advice.',
+        suggestedActions: [
+          { label: 'My Medications', message: 'What medications am I currently taking?' },
+          { label: 'Next Appointment', message: 'When is my next appointment?' },
+          { label: 'Lab Results', message: 'Show me my recent lab results' },
+        ],
+      };
+    </script>
+    <script src="http://localhost:3000/widget.js" async></script>
+  </body>
+</html>
